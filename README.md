@@ -37,22 +37,6 @@ A SQL-driven analysis exploring how driver pairing stability impacts Formula 1 c
 
 ---
 
-## 📁 Repository Structure
-
-```plaintext
-f1-driver-pairing-analysis/
-│
-├── README.md
-├── queries/
-│   ├── 01_base_query.sql
-│   ├── 02_pairing_stability.sql
-│   └── 03_stability_vs_podiums.sql
-├── charts/
-│   └── avg_podiums_by_stability.png
-```
-
----
-
 ## 🛠️ Tools Used
 - **BigQuery SQL**
 - **Google Cloud Console**
