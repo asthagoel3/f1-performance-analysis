@@ -49,8 +49,6 @@ f1-driver-pairing-analysis/
 ├── charts/
 │   └── avg_podiums_by_stability.png
 
-
-
 ---
 
 ## 🛠️ Tools Used
