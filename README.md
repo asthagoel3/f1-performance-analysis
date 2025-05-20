@@ -6,7 +6,7 @@ A SQL-driven analysis exploring how driver pairing stability impacts Formula 1 c
 
 ## 📊 Summary of Queries
 
-### 🔍 Query 1 – `f1_base_query.sql`
+### 🔍 Query 1 – `01_f1_base_query.sql`
 **Purpose**: Builds a unified dataset of constructor-driver pairings by season and counts how many podiums each team achieved that year.
 
 **What it does**:
@@ -17,7 +17,7 @@ A SQL-driven analysis exploring how driver pairing stability impacts Formula 1 c
 
 ---
 
-### 🔁 Query 2 – `f102_pairing_stability.sql`
+### 🔁 Query 2 – `02_f1_pairing_stability.sql`
 **Purpose**: Identifies constructors who retained the same driver pair across multiple seasons.
 
 **What it does**:
@@ -27,7 +27,7 @@ A SQL-driven analysis exploring how driver pairing stability impacts Formula 1 c
 
 ---
 
-### 📈 Query 3 – `f103_stability_vs_podiums.sql`
+### 📈 Query 3 – `03_f1_stability_vs_podiums.sql`
 **Purpose**: Measures how podium performance varies by driver pairing stability.
 
 **What it does**:
