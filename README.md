@@ -48,10 +48,8 @@ f1-driver-pairing-analysis/
 │   └── 03_stability_vs_podiums.sql
 ├── charts/
 │   └── avg_podiums_by_stability.png
-├── data/
-│   └── sample_output.csv (optional)
-└── notebook/
-    └── f1_analysis_summary.ipynb (optional for Jupyter summaries)
+
+
 
 ---
 
