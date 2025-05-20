@@ -39,8 +39,6 @@ A SQL-driven analysis exploring how driver pairing stability impacts Formula 1 c
 
 ## 📁 Repository Structure
 
-## Repository Structure
-
 ```plaintext
 f1-driver-pairing-analysis/
 │
