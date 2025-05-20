@@ -51,6 +51,7 @@ f1-driver-pairing-analysis/
 │   └── 03_stability_vs_podiums.sql
 ├── charts/
 │   └── avg_podiums_by_stability.png
+```
 
 ---
 
