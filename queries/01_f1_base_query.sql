@@ -26,7 +26,10 @@ driver_pairings AS (
   SELECT
     r.year,
     c.name AS constructor_name,
-    ARRAY_AGG(DISTINCT CONCAT(d.forename, ' ', d.surname) ORDER BY CONCAT(d.forename, ' ', d.surname)) AS drivers
+    ARRAY_TO_STRING(
+      ARRAY_AGG(DISTINCT CONCAT(d.forename, ' ', d.surname) ORDER BY CONCAT(d.forename, ' ', d.surname)),
+      ', '
+    ) AS drivers
   FROM
     `f1_data.races` r
   JOIN
