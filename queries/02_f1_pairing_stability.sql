@@ -28,13 +28,15 @@ stable_pairing_podiums AS (
     AND bq.year BETWEEN ps.first_year AND ps.last_year
 )
 
--- Step 3: Final output with average podiums over the stable period
+-- Step 3: Final output with total and average podiums over the stable period
 SELECT
   constructor_name,
   driver_pair,
   stable_years,
-  ROUND(AVG(podium_finishes), 2) AS avg_podiums,
+  SUM (podium_finishes) AS total_podiums,
+  ROUND (AVG(podium_finishes),2) AS avg_podiums,
   COUNT(*) AS years_counted
 FROM stable_pairing_podiums
 GROUP BY constructor_name, driver_pair, stable_years
-ORDER BY avg_podiums DESC;
+ORDER BY total_podiums DESC;
+
