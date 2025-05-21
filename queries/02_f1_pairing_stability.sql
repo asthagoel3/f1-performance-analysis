@@ -9,7 +9,7 @@ WITH pairing_stability AS (
     MIN(year) AS first_year,
     MAX(year) AS last_year
   FROM `f1capstone-459715.f1_data.cleaned_results_base`
-  GROUP BY constructor_name, driver_pair
+  GROUP BY constructor_name, drivers
   HAVING COUNT(*) > 1  -- Only include pairings that stayed together multiple seasons
 ),
 
@@ -24,7 +24,7 @@ stable_pairing_podiums AS (
   FROM pairing_stability ps
   JOIN f1_data.cleaned_results_base bq
     ON ps.constructor_name = bq.constructor_name
-    AND ARRAY_TO_STRING(ps.driver_pair, ',') = ARRAY_TO_STRING(bq.drivers, ',')
+    AND ps.driver_pair = bq.drivers
     AND bq.year BETWEEN ps.first_year AND ps.last_year
 )
 
@@ -34,7 +34,7 @@ SELECT
   driver_pair,
   stable_years,
   ROUND(AVG(podium_finishes), 2) AS avg_podiums,
-  COUNT(*) AS years_counted  -- Should match stable_years if data is complete
+  COUNT(*) AS years_counted
 FROM stable_pairing_podiums
 GROUP BY constructor_name, driver_pair, stable_years
 ORDER BY avg_podiums DESC;
