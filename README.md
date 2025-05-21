@@ -37,9 +37,18 @@ A SQL-driven analysis exploring how driver pairing stability impacts Formula 1 c
 
 ---
 
+## 📈 Visualizations
+
+### Query 1: Podium Finishes by Constructor-Year Pairing
+![Avg Podiums by Year](charts/avg_podiums_by_year.png)
+Shows the total podiums earned by each constructor per year between 2000–2024, highlighting dominant teams and standout seasons.
+
+---
+
 ## 🛠️ Tools Used
 - **BigQuery SQL**
 - **Google Cloud Console**
+- **Tableau**
 
 ---
 
