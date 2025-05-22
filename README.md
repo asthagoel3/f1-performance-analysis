@@ -43,6 +43,10 @@ A SQL-driven analysis exploring how driver pairing stability impacts Formula 1 c
 ![Avg Podiums by Year](charts/avg_podiums_by_year.png)
 Shows the total podiums earned by each constructor per year between 2000–2024, highlighting dominant teams and standout seasons.
 
+### Query 2: Total Podiums by Stable Pairings
+![Stable Pairings Total Podiums](charts/stable_pairings_total_podiums.png)
+Analyzes how driver pairings that have stayed together for two or more consecutive years perform in terms of total podium finishes, showing a positive correlation between partnership stability and success on the podium.
+
 ---
 
 ## 🛠️ Tools Used
