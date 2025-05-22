@@ -52,7 +52,7 @@ Analyzes how driver pairings that have stayed together for two or more consecuti
 ### Query 3: Average Podiums per Year by Driver Pairing Stability
 ![Query 3 Chart: Average Podiums by Stability](charts/average_podiums_by_stability.png)
 Examines how the length of time two drivers race together (pairing stability) influences their average podium finishes per year from 2000–2024. 
-> *The chart reveals that longer-lasting partnerships generally correlate with higher average podiums, highlighting the strategic value of consistency in team lineups.
+> *The chart reveals that longer-lasting partnerships generally correlate with higher average podiums, highlighting the strategic value of consistency in team lineups.*
 
 ---
 
